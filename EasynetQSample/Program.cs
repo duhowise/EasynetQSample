@@ -1,4 +1,6 @@
 ﻿using System;
+using EasynetQSample.Core;
+using EasyNetQ;
 
 namespace EasynetQSample
 {
@@ -6,7 +8,19 @@ namespace EasynetQSample
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            for (var i = 0; i < 10; i++)
+            {
+                using (var bus = RabbitHutch.CreateBus("host=localhost"))
+                {
+                    bus.Publish(new TextMessage
+                    {
+                        Text = $"{i} Hello world from EsyNetQ"
+                    });
+                }
+            }
+
+            Console.ReadLine();
         }
+        
     }
 }

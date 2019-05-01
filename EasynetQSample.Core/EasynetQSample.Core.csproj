@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="EasyNetQ">
+      <HintPath>..\..\..\..\.nuget\packages\easynetq\3.4.5\lib\netstandard2.0\EasyNetQ.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

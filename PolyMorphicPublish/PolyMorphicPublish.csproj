@@ -13,4 +13,10 @@
     <ProjectReference Include="..\EasynetQSample.Core\EasynetQSample.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="EasyNetQ">
+      <HintPath>..\..\..\..\.nuget\packages\easynetq\3.4.5\lib\netstandard2.0\EasyNetQ.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
