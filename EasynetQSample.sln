@@ -3,23 +3,33 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasynetQSample", "EasynetQSample\EasynetQSample.csproj", "{F47F0C4C-76D6-45AA-BCBC-A7D08454A918}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasynetQSample", "EasynetQSample\EasynetQSample.csproj", "{F47F0C4C-76D6-45AA-BCBC-A7D08454A918}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasynetQSample.Subscriber", "EasynetQSample.Subscriber\EasynetQSample.Subscriber.csproj", "{70096024-74DE-4940-B7F4-C4DE3D761373}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasynetQSample.Subscriber", "EasynetQSample.Subscriber\EasynetQSample.Subscriber.csproj", "{70096024-74DE-4940-B7F4-C4DE3D761373}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasynetQSample.Core", "EasynetQSample.Core\EasynetQSample.Core.csproj", "{1B1EA0CE-78D7-476F-807B-4A2715B6505D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasynetQSample.Core", "EasynetQSample.Core\EasynetQSample.Core.csproj", "{1B1EA0CE-78D7-476F-807B-4A2715B6505D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Simple Publish and Subscribe", "Simple Publish and Subscribe", "{9600BD71-B20F-4C38-8E0E-AB943F025FAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Publish", "Publish\Publish.csproj", "{310B4695-05C4-4028-9B16-3A8A531AEE13}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Publish", "Publish\Publish.csproj", "{310B4695-05C4-4028-9B16-3A8A531AEE13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Subscribe", "Subscribe\Subscribe.csproj", "{ACF453F5-555F-4B6A-AE2D-F6C0A4671EA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Subscribe", "Subscribe\Subscribe.csproj", "{ACF453F5-555F-4B6A-AE2D-F6C0A4671EA7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Polymorphic publish and subscribe", "Polymorphic publish and subscribe", "{C800BC02-6DD0-4C94-B690-0F914AAF15CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolyMorphicPublish", "PolyMorphicPublish\PolyMorphicPublish.csproj", "{1FC2CA2B-A448-432E-B3E9-93515D5D0762}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PolyMorphicPublish", "PolyMorphicPublish\PolyMorphicPublish.csproj", "{1FC2CA2B-A448-432E-B3E9-93515D5D0762}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolyMorphicSubscribe", "PolyMorphicSubscribe\PolyMorphicSubscribe.csproj", "{69B192E7-DB35-4AE0-ADB1-B61F60AB874A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PolyMorphicSubscribe", "PolyMorphicSubscribe\PolyMorphicSubscribe.csproj", "{69B192E7-DB35-4AE0-ADB1-B61F60AB874A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RemoteProcedure", "RemoteProcedure", "{EB024668-2D04-4625-BF7A-9CC618453D1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Request", "Request\Request.csproj", "{52BAF7BC-0644-4310-96FB-CFC80DC50A57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Respond", "Respond\Respond.csproj", "{76A26EA6-F8A1-4703-A864-8345B06E87D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RequestAsync", "RequestAsync\RequestAsync.csproj", "{42222C76-9B8F-4F67-A829-206978083A17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReceiveAsync", "ReceiveAsync\ReceiveAsync.csproj", "{21F06AC4-C887-4719-B7B6-C4494F54BEA6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +65,22 @@ Global
 		{69B192E7-DB35-4AE0-ADB1-B61F60AB874A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69B192E7-DB35-4AE0-ADB1-B61F60AB874A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69B192E7-DB35-4AE0-ADB1-B61F60AB874A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52BAF7BC-0644-4310-96FB-CFC80DC50A57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52BAF7BC-0644-4310-96FB-CFC80DC50A57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52BAF7BC-0644-4310-96FB-CFC80DC50A57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52BAF7BC-0644-4310-96FB-CFC80DC50A57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76A26EA6-F8A1-4703-A864-8345B06E87D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76A26EA6-F8A1-4703-A864-8345B06E87D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76A26EA6-F8A1-4703-A864-8345B06E87D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76A26EA6-F8A1-4703-A864-8345B06E87D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42222C76-9B8F-4F67-A829-206978083A17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42222C76-9B8F-4F67-A829-206978083A17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42222C76-9B8F-4F67-A829-206978083A17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42222C76-9B8F-4F67-A829-206978083A17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21F06AC4-C887-4719-B7B6-C4494F54BEA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21F06AC4-C887-4719-B7B6-C4494F54BEA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21F06AC4-C887-4719-B7B6-C4494F54BEA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21F06AC4-C887-4719-B7B6-C4494F54BEA6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +90,10 @@ Global
 		{ACF453F5-555F-4B6A-AE2D-F6C0A4671EA7} = {9600BD71-B20F-4C38-8E0E-AB943F025FAE}
 		{1FC2CA2B-A448-432E-B3E9-93515D5D0762} = {C800BC02-6DD0-4C94-B690-0F914AAF15CC}
 		{69B192E7-DB35-4AE0-ADB1-B61F60AB874A} = {C800BC02-6DD0-4C94-B690-0F914AAF15CC}
+		{52BAF7BC-0644-4310-96FB-CFC80DC50A57} = {EB024668-2D04-4625-BF7A-9CC618453D1B}
+		{76A26EA6-F8A1-4703-A864-8345B06E87D8} = {EB024668-2D04-4625-BF7A-9CC618453D1B}
+		{42222C76-9B8F-4F67-A829-206978083A17} = {EB024668-2D04-4625-BF7A-9CC618453D1B}
+		{21F06AC4-C887-4719-B7B6-C4494F54BEA6} = {EB024668-2D04-4625-BF7A-9CC618453D1B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F7B45D99-DD62-40D4-A922-8D3E82CD619D}
