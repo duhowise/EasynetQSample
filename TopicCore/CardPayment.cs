@@ -1,6 +1,6 @@
-﻿namespace EasynetQSample.Core
+﻿namespace TopicCore
 {
-   public class CardPaymentRequestMessage : IPayment
+    public class CardPayment : IPayment
     {
         public string CardNumber { get; set; }
         public string CardHolderName { get; set; }

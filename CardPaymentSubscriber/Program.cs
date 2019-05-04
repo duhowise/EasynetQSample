@@ -1,6 +1,6 @@
 ﻿using System;
-using EasynetQSample.Core;
 using EasyNetQ;
+using TopicCore;
 
 namespace CardPaymentSubscriber
 {
@@ -10,12 +10,13 @@ namespace CardPaymentSubscriber
         {
             using (var bus = RabbitHutch.CreateBus("host=localhost"))
             {
-                bus.Subscribe<IPayment>("cardPaymentId", Handler, x => x.WithTopic("payment.cardPayment"));
+                bus.Subscribe<IPayment>("cardPayment", Handler, x => x.WithTopic("payment.card"));
+                Console.WriteLine(
+                    "listening for (payment.card) messages");
+                Console.ReadLine();
             }
 
-            Console.WriteLine(
-                "listening for (payment.cardPayment) messages");
-            Console.ReadLine();
+           
         }
 
         private static void Handler(IPayment payment)

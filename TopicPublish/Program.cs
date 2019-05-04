@@ -1,6 +1,6 @@
 ﻿using System;
-using EasynetQSample.Core;
 using EasyNetQ;
+using TopicCore;
 
 namespace TopicPublish
 {
@@ -62,14 +62,14 @@ namespace TopicPublish
                 using (var bus = RabbitHutch.CreateBus("host=localhost"))
                 {
                     Console.WriteLine("Publishing Message with topic based polymorphic publish and subscribe");
-                    Console.WriteLine("---polymorphic Message");
+                    Console.WriteLine();
                     bus.Publish<IPayment>(order,"payment.purchaseOrder");
                     bus.Publish<IPayment>(purchaseOrder, "payment.purchaseOrder");
-                    bus.Publish<IPayment>(payment, "payment.cardPayment");
-                    bus.Publish<IPayment>(payment1, "payment.cardPayment");
-                    bus.Publish<IPayment>(payment2, "payment.cardPayment");
-                    bus.Publish<IPayment>(payment3, "payment.cardPayment");
-                    bus.Publish<IPayment>(payment4, "payment.cardPayment");
+                    bus.Publish<IPayment>(payment, "payment.card");
+                    bus.Publish<IPayment>(payment1, "payment.card");
+                    bus.Publish<IPayment>(payment2, "payment.card");
+                    bus.Publish<IPayment>(payment3, "payment.card");
+                    bus.Publish<IPayment>(payment4, "payment.card");
                     Console.ReadLine();
                 }
             }

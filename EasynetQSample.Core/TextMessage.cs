@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace EasynetQSample.Core
+﻿namespace EasynetQSample.Core
 {
     public class TextMessage
     {

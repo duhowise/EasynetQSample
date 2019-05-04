@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\EasynetQSample.Core\EasynetQSample.Core.csproj" />
+    <ProjectReference Include="..\TopicCore\TopicCore.csproj" />
   </ItemGroup>
 
 </Project>

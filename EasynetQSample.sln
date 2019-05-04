@@ -33,19 +33,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReceiveAsync", "ReceiveAsyn
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SendAndReceive", "SendAndReceive", "{215F8EAC-698F-43CD-8056-577CCB6A3E96}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Send", "Send\Send.csproj", "{05C66DB0-2E1E-4591-8D16-0925EDE5CF12}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Send", "Send\Send.csproj", "{05C66DB0-2E1E-4591-8D16-0925EDE5CF12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Receive", "Receive\Receive.csproj", "{D09668A0-351E-41D2-BA94-33AC154F1757}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Receive", "Receive\Receive.csproj", "{D09668A0-351E-41D2-BA94-33AC154F1757}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReceiveMultiple", "ReceiveMultiple\ReceiveMultiple.csproj", "{B89D7169-4281-41C6-852F-CAB5BC46EB0D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReceiveMultiple", "ReceiveMultiple\ReceiveMultiple.csproj", "{B89D7169-4281-41C6-852F-CAB5BC46EB0D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TopicBased", "TopicBased", "{4F29325C-BE66-4DCC-88F3-F7F92B990ACA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopicPublish", "TopicPublish\TopicPublish.csproj", "{6B7A678E-D72E-406C-B739-4DADFC89BBFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TopicPublish", "TopicPublish\TopicPublish.csproj", "{6B7A678E-D72E-406C-B739-4DADFC89BBFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardPaymentSubscriber", "CardPaymentSubscriber\CardPaymentSubscriber.csproj", "{A5EF51D9-747D-4C65-8F69-C702DD3C2E8C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CardPaymentSubscriber", "CardPaymentSubscriber\CardPaymentSubscriber.csproj", "{A5EF51D9-747D-4C65-8F69-C702DD3C2E8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PurchaseOrderReceiver", "PurchaseOrderReceiver\PurchaseOrderReceiver.csproj", "{0C521A5D-49F5-4C2B-8AB3-D413BB3B766D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PurchaseOrderReceiver", "PurchaseOrderReceiver\PurchaseOrderReceiver.csproj", "{0C521A5D-49F5-4C2B-8AB3-D413BB3B766D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AllPaymentSubscriber", "AllPaymentSubscriber\AllPaymentSubscriber.csproj", "{5E2B9EAE-B557-4063-820F-7DCB69AA32FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopicCore", "TopicCore\TopicCore.csproj", "{84361CA4-F323-4DF6-881E-FA0FDFBEDB0D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -121,6 +125,14 @@ Global
 		{0C521A5D-49F5-4C2B-8AB3-D413BB3B766D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C521A5D-49F5-4C2B-8AB3-D413BB3B766D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C521A5D-49F5-4C2B-8AB3-D413BB3B766D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E2B9EAE-B557-4063-820F-7DCB69AA32FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E2B9EAE-B557-4063-820F-7DCB69AA32FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E2B9EAE-B557-4063-820F-7DCB69AA32FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E2B9EAE-B557-4063-820F-7DCB69AA32FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84361CA4-F323-4DF6-881E-FA0FDFBEDB0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84361CA4-F323-4DF6-881E-FA0FDFBEDB0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84361CA4-F323-4DF6-881E-FA0FDFBEDB0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84361CA4-F323-4DF6-881E-FA0FDFBEDB0D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -140,6 +152,8 @@ Global
 		{6B7A678E-D72E-406C-B739-4DADFC89BBFE} = {4F29325C-BE66-4DCC-88F3-F7F92B990ACA}
 		{A5EF51D9-747D-4C65-8F69-C702DD3C2E8C} = {4F29325C-BE66-4DCC-88F3-F7F92B990ACA}
 		{0C521A5D-49F5-4C2B-8AB3-D413BB3B766D} = {4F29325C-BE66-4DCC-88F3-F7F92B990ACA}
+		{5E2B9EAE-B557-4063-820F-7DCB69AA32FF} = {4F29325C-BE66-4DCC-88F3-F7F92B990ACA}
+		{84361CA4-F323-4DF6-881E-FA0FDFBEDB0D} = {4F29325C-BE66-4DCC-88F3-F7F92B990ACA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F7B45D99-DD62-40D4-A922-8D3E82CD619D}

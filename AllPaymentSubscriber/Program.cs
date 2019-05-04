@@ -2,7 +2,7 @@
 using EasyNetQ;
 using TopicCore;
 
-namespace PurchaseOrderReceiver
+namespace AllPaymentSubscriber
 {
     class Program
     {
@@ -10,12 +10,13 @@ namespace PurchaseOrderReceiver
         {
             using (var bus = RabbitHutch.CreateBus("host=localhost"))
             {
-                bus.Subscribe<IPayment>(nameof(PurchaseOrder), Handler, x => x.WithTopic("payment.purchaseOrder"));
-                Console.WriteLine("listening for (payment.purchaseOrder) messages");
+                bus.Subscribe<IPayment>("accounts", Handler, x => x.WithTopic("payment.*"));
+                Console.WriteLine(
+                    "listening for (payment.*) messages");
                 Console.ReadLine();
             }
 
-
+            
         }
 
         private static void Handler(IPayment payment)
@@ -23,6 +24,11 @@ namespace PurchaseOrderReceiver
             if (payment is PurchaseOrder purchaseOrder)
             {
                 Console.WriteLine($"purchase order =< {purchaseOrder.CompanyName},{purchaseOrder.Amount},{purchaseOrder.PaymentDayTerms},{purchaseOrder.PoNumber}>");
+
+            }
+            if (payment is CardPayment cardPayment)
+            {
+                Console.WriteLine($"Payment =< {cardPayment.CardNumber},{cardPayment.CardHolderName},{cardPayment.ExpiryDate},{cardPayment.Amount}>");
 
             }
         }
